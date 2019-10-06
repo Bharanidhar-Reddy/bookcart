@@ -1,0 +1,13 @@
+.menuimage{
+    padding: 10px;
+    height: 250px;
+    width: 170px;
+}
+.menucol{
+
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 40px;
+    background-color: white;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,13 @@
+<h1 style="text-align: center;color:blue">Our Menu</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-2 menucol" *ngFor="let b of books">
+            
+                <div><img class="menuimage" [src]="b.img"></div>
+                <div>{{b.name}}</div>
+                <div>Author: {{b.author}}</div>
+                <div>Price: {{b.price}} Rs /- only</div>
+                <div><button type="button" routerLink="/details" class="btn-primary" (click)="onClick(b)">View Details</button></div>
+        </div>
+    </div>
+</div>

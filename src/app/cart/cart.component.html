@@ -1,0 +1,23 @@
+<h1 style="color: blue;text-align: center">Your Cart</h1>
+<div class="container">
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="books.length > 0">
+            <tr *ngFor="let b of books">
+                <th scope="row">{{b.id}}</th>
+                <td> {{b.title}} </td>
+                <td> {{b.author}} </td>
+                <td> {{b.price}} </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>Total cost = {{total}} </div>
+    <div><button class="btn btn-info" type="button" (click)="final()">Place Order</button></div>
+</div>
